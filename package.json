@@ -1,0 +1,60 @@
+{
+  "name": "@ignsg/react-native-outside",
+  "main": "outside.js",
+  "types": "./types/outside.d.ts",
+  "exports": {
+    "./view-proxy": {
+      "types": "./types/view-proxy.d.ts",
+      "require": "./view-proxy.js",
+      "import": "./view-proxy.js"
+    },
+    ".": {
+      "types": "./types/outside.d.ts",
+      "require": "./outside.js",
+      "import": "./outside.js"
+    },
+    "./outside": {
+      "types": "./types/outside.d.ts",
+      "require": "./outside.js",
+      "import": "./outside.js"
+    },
+    "./with-outside": {
+      "types": "./types/with-outside.d.ts",
+      "require": "./with-outside.js",
+      "import": "./with-outside.js"
+    }
+  },
+  "version": "0.0.6",
+  "description": "'Outside' event listener for React Native",
+  "keywords": [
+    "react-native",
+    "outside",
+    "press",
+    "event",
+    "listener"
+  ],
+  "author": "JJ (aka IgnusG)",
+  "license": "MIT",
+  "files": [
+    "view-proxy.js",
+    "outside.js",
+    "with-outside.js",
+    "context.js",
+    "types/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "expo": ">=54.0.0",
+    "react": ">=19.0.0",
+    "react-native": ">=0.81.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.1.10",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "typescript": "^5.9.2"
+  }
+}
